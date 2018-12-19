@@ -1,6 +1,10 @@
 .main {
     display: flex;
     width: 100%;
+    padding-bottom: 50px;
+    @include tablet() {
+        margin-top: 70px;
+    }
     &__content {
         width: 83vw;
         border-right: 1px solid rgba(232, 234, 237, .7);

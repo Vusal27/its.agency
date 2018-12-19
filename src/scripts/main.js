@@ -118,6 +118,21 @@ $(window).scroll(function(){
     }
 });
 
+//// Обработки кнопки бургер
+var burgerlink = document.querySelector('.header__burger-link');
+var navMobile = document.querySelector('.nav-mobile');
+burgerlink.addEventListener('click', toggleClassBurger);
+
+var navMobilelink = document.querySelectorAll ("a.nav-mobile__item-link");
+for (var link of navMobilelink){
+	link.addEventListener('click', toggleClassBurger);
+}
+function toggleClassBurger() {
+    event.preventDefault();
+    burgerlink.classList.toggle("header__burger-link_active");
+    navMobile.classList.toggle("nav-mobile_active");
+}
+
 //// Открываем фильтр
 const show = document.querySelector(".filter-show");
 const filterMob = document.querySelector(".filter");
@@ -135,7 +150,7 @@ function toggleClass() {
         bg.classList.toggle("bg_active");
     } if (bg.classList.contains("bg_active")) {
         document.body.style.overflow = "hidden";
-    } if ((window.innerWidth < 768 && !bg.classList.contains("bg_active"))) {
+    } if ((window.innerWidth < 769 && !bg.classList.contains("bg_active"))) {
         document.body.style.overflow = "auto";
     }
 }

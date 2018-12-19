@@ -7,6 +7,12 @@
     @include tablet() {
         padding: 10px;
         box-sizing: border-box;
+        position: fixed;
+        top: -2px;
+        left: 0;
+        right: 0;
+        background: white;
+        z-index: 1;
     }
     &__nav {
         padding: 10px;
