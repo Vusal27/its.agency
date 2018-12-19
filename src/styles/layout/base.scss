@@ -1,0 +1,85 @@
+html, body {
+    max-width: 100vw;
+    font-family: 'tt_norms', Helvetica, sans-serif;
+}
+ul {
+    margin: 0;
+    padding: 0;
+}
+ul li {
+    list-style: none;
+}
+a {
+    text-decoration: none;
+}
+p {
+    margin: 0px;
+}
+h1,h2,h3,h4,h5,h6 {
+    margin: 0;
+    font-weight: normal;
+}
+button {
+    outline: none;
+}
+:root {
+    font-size: 15px;
+    @include laptop {
+        font-size: 14px;
+    }
+    @include tablet {
+        font-size: 13px; 
+    }
+    @include phone {
+        font-size: 12px;
+    }
+}
+input, textarea {
+    box-sizing: border-box;
+}
+.wrapper {
+    height: 100%;
+    width: 100%;
+    font-size: 15px;
+    color: $blacks;
+    overflow-x: hidden;
+}
+sup {
+    z-index: -1;
+    @include tablet() {
+        opacity: 0.4;
+    }
+}
+.bg {
+    z-index: -1;
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background: rgba(0, 0, 0, .0);
+    transition: .5s linear;
+    &_active {
+        background: rgba(0, 0, 0, .7);
+        z-index: 400;
+        @include tablet() {
+            z-index: 100;
+        }
+    }
+}
+.fixed {
+    position: fixed;
+    top: -20px;
+    left: 0;
+    right: 17%;
+    z-index: 150;
+    @include laptop-sm() {
+        right: 0;
+    }
+    &_basket {
+        position: fixed;
+        top: -50px;
+        right: 0;
+        left: 83.2%;
+    }
+}

@@ -1,0 +1,55 @@
+.nav__burger {
+    width: 28px;
+    height: 2px;
+    background-color: $blacks;
+    border-radius: 5px;
+    position: relative;
+    &-link {
+        display: none;
+        height: 30px;
+        align-items: center;
+        justify-content: center;
+        z-index: 500;
+        @include tablet() {
+            display: flex;
+        }
+        @include phone() {
+            display: flex;
+        }
+    }
+    &::before {
+        content: "";
+        display: block;
+        width: 28px;
+        height: 2px;
+        background-color: $blacks;
+        border-radius: 5px;
+        position: absolute;
+        top: -7px;
+        transition: 0.5s;
+    }
+    &::after {
+        content: "";
+        display: block;
+        width: 28px;
+        height: 2px;
+        background-color: $blacks;
+        border-radius: 5px;
+        position: absolute;
+        top: 7px;
+        transition: 0.5s;
+    }
+}
+.nav__burger-link--active {
+    .nav__burger {
+        background: transparent;
+    }
+    .nav__burger::before {
+        top: 0;
+        transform: rotate(45deg);
+    }
+    .nav__burger::after {
+        top: 0;
+        transform: rotate(-45deg);
+    }
+}

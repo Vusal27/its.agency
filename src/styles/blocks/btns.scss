@@ -1,0 +1,75 @@
+.btns {
+    &__switch {
+        height: 100%;
+        width: 22%;
+        background: #B81111;
+        display: flex;
+        flex-direction: column;
+        justify-content: space-around;
+        align-items: center;
+        @include tablet() {
+            flex-direction: row-reverse;
+            width: 45%;
+        }
+        &-plus, &-minus {
+            padding: 5px;
+            border: 0;
+            background: transparent;
+            color: white;
+            font-weight: bold;
+            cursor: pointer;
+        }
+        &-count {
+            font-weight: bold;
+        }
+    }
+    &__result {
+        flex: 1;
+        background: $reds;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        &-sum {
+            font-weight: bold;
+            padding-right: 40px;
+            margin-right: 40px;
+            border-right: 1px solid rgba(250, 250, 250, .5);
+            @include laptop-sm() {
+                padding-right: 20px;
+                margin-right: 20px;
+            }
+            @include tablet() {
+                display: none;
+            }
+        }
+        &-add {
+            padding: 5px;
+            border: 0;
+            background: transparent;
+            color: white;
+            font-weight: bold;
+            cursor: pointer;
+            @include tablet() {
+                display: none;
+            }
+        }
+        &-ready {
+            display: none;
+            height: 100%;
+            width: 100%;
+            border: 0;
+            background: transparent;
+            color: white;
+            font-weight: bold;
+            cursor: pointer;
+            text-transform: uppercase;
+            padding: 0;
+            @include tablet() {
+                display: initial;
+            }
+            @include phone() {
+                font-size: 12px;
+            }
+        }
+    }
+}

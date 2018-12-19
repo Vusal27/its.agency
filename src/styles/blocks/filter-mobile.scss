@@ -1,0 +1,22 @@
+.filter-mobile {
+    padding: 60px 16vw 5px;
+    width: 100vw;
+    height: 70vh;
+    box-sizing: border-box;
+    background: white;
+    overflow: hidden;
+    overflow-y: scroll;
+    @include phone() {
+        padding-top: 50px;
+    }
+    &__item {
+        margin-bottom: 30px;
+        font-size: 18px;
+    }
+    &__btn {
+        border: none;
+        background: transparent;
+        padding: 0;
+        cursor: pointer;
+    }
+}

@@ -1,0 +1,34 @@
+.section {
+    padding: 60px 2.5vw 0 5vw;
+    &__item {
+        display: flex;
+        flex-wrap: wrap;
+        padding-top: 70px;
+    }
+    &__filter {
+        text-align: end;
+        cursor: pointer;
+        @include tablet() {
+            display: none;
+        }
+    }
+    &__title, &__filter {
+        font-size: 32px;
+        font-weight: bold;
+        min-width: 50%;
+        margin-bottom: 70px;
+    }
+    &__filter {
+        font-size: 15px;
+        font-weight: normal;
+    }
+    &__menu {
+        width: 100%;
+    }
+    &__icon {
+        width: 9px;
+        height: 5px;
+        stroke: $blacks;
+        fill: none;
+    }
+}

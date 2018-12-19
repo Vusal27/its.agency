@@ -1,0 +1,125 @@
+.filter {
+    padding-left: 5vw;
+    border-bottom: 1px solid rgba(232, 234, 237, .7);
+    background: white;
+    z-index: 300;
+    @include tablet() {
+        margin-bottom: -75vh;
+        padding: 60px 16vw 5px;
+        width: 100vw;
+        height: 75vh;
+        box-sizing: border-box;
+        overflow: hidden;
+        overflow-y: auto;
+        position: fixed;
+        bottom: 0;
+        left: 0;
+        right: 0;
+        transition: margin 0.5s linear;
+        z-index: 500;
+    }
+    &_mb {
+        margin-bottom: 0;
+        .filter__btn {
+            opacity: 0;
+            -webkit-animation: bounceInUpWords 1.5s linear;
+            animation: bounceInUpWords 1.5s linear;
+            animation-fill-mode: forwards;
+            animation-delay: .6s;
+        }
+    }
+    &__list {
+        display: flex;
+        height: 90px;
+        @include tablet() {
+            flex-direction: column;
+            height: 100%;
+        }
+    }
+    &__item {
+        height: 100%;
+        margin-right: 2vw;
+        @include tablet() {
+            margin-bottom: 30px;
+            margin-right: 0;
+            font-size: 18px;
+            height: initial;
+        }
+        &_active {
+            position: relative;
+            .filter__btn {
+                color: $reds;
+            }
+            &::after {
+                content: "";
+                display: block;
+                width: 30px;
+                height: 2px;
+                background: $reds;
+                position: absolute;
+                bottom: -1px;
+                left: 50%;
+                transform: translateX(-50%);
+                @include tablet() {
+                    display: none;
+                }
+            }
+        }
+        &:hover {
+            position: relative;
+            .filter__btn {
+                color: $reds;
+            }
+            &::after {
+                content: "";
+                display: block;
+                width: 30px;
+                height: 2px;
+                background: $reds;
+                position: absolute;
+                bottom: -1px;
+                left: 50%;
+                transform: translateX(-50%);
+                @include tablet() {
+                    display: none;
+                }
+            }
+        }
+    }
+    &__btn {
+        cursor: pointer;
+        height: 100%;
+        border: 0;
+        background: transparent;
+        padding: 0;
+        font-size: 18px;
+        width: 100%;
+        text-align: start;
+        &-degree {
+            font-size: 9px;
+            z-index: 500;
+        }
+    }
+}
+.filter-show {
+    background: url('../images/content/menu.png');
+    background-size: cover;
+    height: 55px;
+    width: 55px;
+    border: none;
+    cursor: pointer;
+    position: fixed;
+    right: 20px;
+    bottom: 20px;
+    display: none;
+    padding: 0;
+    @include tablet() {
+        display: block;
+        &_hidden {
+            display: none;
+        }
+    }
+}
+sup {
+    opacity: 0.4;
+}

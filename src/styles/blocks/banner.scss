@@ -1,0 +1,103 @@
+.banner {
+    background: url('../images/background/bg.png');
+    background-size: 100% 100%;
+    height: 580px;
+    display: flex;
+    align-items: flex-end;
+    @include tablet() {
+        background: url('../images/background/bg-mobile.png');
+        background-size: 100% 100%;
+    }
+    &__content {
+        display: flex;
+        width: 87.5%;
+        color: white;
+        height: 200px;
+        @include laptop() {
+            width: 100%;
+        }
+    }
+    &__icon {
+        display: none;
+        height: 30px;
+        width: 30px;
+        transform: rotate(45deg);
+        @include tablet() {
+            display: inline;
+        }
+    }
+    &__info {
+        flex: 1;
+        background: $reds;
+        display: flex;
+        justify-content: flex-start;
+        align-items: center;
+        user-select: none;
+        padding-left: 5vw;
+        @include tablet() {
+            flex-direction: column;
+            align-items: flex-start;
+            justify-content: center;
+        }
+        &-list {
+            display: flex;
+        }
+        &-title {
+            font-size: 14px;
+            opacity: 0.5;
+            margin-right: 35px;
+            margin-bottom: 10px;
+            @include phone() {
+                font-size: 13px;
+            }
+        }
+        &-desc {
+            font-size: 18px;
+            @include laptop-sm() {
+                font-size: 17px;
+            }
+            @include phone() {
+                font-size: 15px;
+            }
+        }
+        &-item {
+            margin-left: 55px;
+            list-style: none;
+            @include laptop() {
+                margin-left: 30px;
+            }
+            @include laptop-sm() {
+                margin-left: 22px;
+            }
+            &:first-child {
+                @include tablet() {
+                    margin-left: 0;
+                }
+            }
+        }
+    }
+    &__title {
+        font-size: 48px;
+        font-family: 'spectral';
+        font-weight: bold;
+        @include tablet() {
+            margin-bottom: 15px;
+        }
+    }
+    &__button {
+        width: 25%;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        color: white;
+        font-size: 12px;
+        text-transform: uppercase;
+        background: #313131;
+        @include laptop() {
+            width: 20%;
+        }
+        @include tablet() {
+            display: none;
+        }
+    }
+}

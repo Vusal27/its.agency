@@ -1,0 +1,97 @@
+.menu {
+    width: 100%;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    @include tablet() {
+        flex-direction: column;
+    }
+    &__item {
+        width: 20.1%;
+        color: #2E2E2E;
+        @include tablet() {
+            margin-bottom: 60px;
+            &:last-child {
+                margin-bottom: 0;
+            }
+        }
+        &:hover {
+            .menu__title {
+                border-bottom: 1px solid $reds;
+            }
+        }
+        @include laptop {
+            width: 23%;
+        }
+        @include tablet() {
+            width: 100%;
+            text-align: center;
+        }
+    }
+    &__count {
+        display: flex;
+        justify-content: flex-end;
+        @include tablet() {
+            display: none;
+        }
+    }
+    &__minus, &__plus {
+        background: transparent;
+        border: none;
+        padding: 0;
+        font-weight: bold;
+        cursor: pointer;
+        display: none;
+    }
+    &__plus {
+        color: $reds;
+        display: block;
+    }
+    &__number {
+        margin: 0 10px;
+        display: none;
+    }
+    &__img {
+        width: 100%;
+        @include tablet() {
+            width: 95%;
+        }
+        &_width {
+            width: 101.5%;
+        }
+    }
+    &__title {
+        width: 100%;
+        display: flex;
+        justify-content: space-between;
+        border-bottom: 1px solid rgba(46, 46, 46, .5);
+        min-height: 40px;
+        margin-bottom: 20px;
+    }
+    &__name {
+        font-size: 18px;
+        font-weight: bold;
+        margin-right: 5px;
+    }
+    &__weight {
+        font-size: 16px;
+        opacity: 0.5;
+    }
+    &__cost {
+        font-size: 16px;
+        font-weight: bold;
+        min-width: 41px;
+    }
+    &__consist {
+        font-size: 15px;
+        opacity: 0.7;
+        text-align: start;
+        &-more {
+            background: transparent;
+            border: none;
+            font-weight: bold;
+            cursor: pointer;
+            padding: 0;
+        }
+    }
+}

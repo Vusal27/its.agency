@@ -1,0 +1,35 @@
+@font-face {
+    font-family: 'spectral';
+    src: url('../fonst/spectral-bold-webfont.woff2') format('woff2'),
+         url('../fonst/spectral-bold-webfont.woff') format('woff');
+    font-weight: bold;
+    font-style: normal;
+}
+@font-face {
+    font-family: 'tt_norms';
+    src: url('../fonst/ttnorms-bold-webfont.woff2') format('woff2'),
+         url('../fonst/ttnorms-bold-webfont.woff') format('woff');
+    font-weight: bold;
+    font-style: normal;
+}
+@font-face {
+    font-family: 'tt_norms';
+    src: url('../fonst/ttnorms-light-webfont.woff2') format('woff2'),
+         url('../fonst/ttnorms-light-webfont.woff') format('woff');
+    font-weight: light;
+    font-style: normal;
+}
+@font-face {
+    font-family: 'tt_norms';
+    src: url('../fonst/ttnorms-medium-webfont.woff2') format('woff2'),
+         url('../fonst/ttnorms-medium-webfont.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+}
+@font-face {
+    font-family: 'tt_norms';
+    src: url('../fonst/ttnorms-regular-webfont.woff2') format('woff2'),
+         url('../fonst/ttnorms-regular-webfont.woff') format('woff');
+    font-weight: regular;
+    font-style: normal;
+}

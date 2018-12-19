@@ -1,0 +1,18 @@
+.main {
+    display: flex;
+    width: 100%;
+    &__content {
+        width: 83vw;
+        border-right: 1px solid rgba(232, 234, 237, .7);
+        @include laptop-sm() {
+            width: 100%;
+        }
+    }
+    &__basket {
+        width: 17%;
+        z-index: -1;
+        @include laptop-sm() {
+            display: none;
+        }
+    }
+}

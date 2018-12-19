@@ -1,0 +1,36 @@
+.nav {
+    display: flex;
+    height: 100%;
+    align-items: center;
+    &__list {
+        display: flex;
+        align-items: center;
+        @include tablet() {
+            display: none;
+        }
+    }
+    &__item {
+        margin: 0 22px;
+        &:first-child {
+            margin-left: 0;
+        }
+        &:last-child {
+            margin-right: 0;
+        }
+        @include laptop() {
+            margin: 0 15px;
+        }
+        &-link {
+            color: $blacks;
+        }
+    }
+}
+.logo {
+    height: 100%;
+    width: 55px;
+    margin: 0 40px;
+    background: $reds;
+    @include laptop() {
+        margin: 0 30px;
+    }
+}

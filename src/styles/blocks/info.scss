@@ -1,0 +1,96 @@
+.info {
+    &__close {
+        padding: 0;
+        border: 0;
+        background: transparent;
+        cursor: pointer;
+        &:hover {
+            .info__icon {
+                stroke: $reds;
+            }
+        }
+        &-wrap {
+            display: flex;
+            justify-content: flex-end;
+            margin-bottom: 12%;
+            @include tablet() {
+                display: none;
+            }
+        }
+        &_mobile {
+            display: none;
+            background: #E8EAED;
+            position: absolute;
+            top: 0;
+            right: 0;
+            padding: 15px;
+            @include tablet() {
+                display: block;
+            }
+            @include phone() {
+                padding: 10px;
+            }
+        }
+    }
+    &__icon {
+        height: 40px;
+        width: 40px;
+        stroke: $blacks;
+        &:hover {
+            stroke: $reds;
+        }
+    }
+    &__title {
+        font-size: 24px;
+        margin-bottom: 7%;
+        font-weight: bold;
+        @include tablet() {
+            margin-bottom: 35px;
+        }
+        @include phone() {
+            margin-bottom: 25px;
+        }
+        &-weight {
+            color: $blacks;
+            opacity: 0.4;
+        }
+    }
+    &__subtitle {
+        font-size: 15px;
+        margin-bottom: 3%;
+        color: $blacks;
+        opacity: 0.4;
+        @include tablet() {
+            margin-bottom: 20px;
+        }
+        @include phone() {
+            margin-bottom: 10px;
+        }
+    }
+    &__desc {
+        font-size: 15px;
+        line-height: 1.42;
+        margin-bottom: 7%;
+        @include tablet() {
+            margin-bottom: 35px;
+        }
+        @include phone() {
+            margin-bottom: 25px;
+        }
+    }
+    &__nutritions {
+        display: flex;
+    }
+    &__nutrition {
+        margin-right: 10%;
+        color: $blacks;
+        font-weight: bold;
+        font-size: 18px;
+        &-val {
+            color: $blacks;
+            font-size: 12px;
+            opacity: 0.4;
+            margin-top: 10px;
+        }
+    }
+}

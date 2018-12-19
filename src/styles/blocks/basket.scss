@@ -1,0 +1,19 @@
+.basket {
+    text-align: center;
+    padding-top: 10px;
+    background: white;
+    z-index: 500;
+    &__title {
+        margin: 60px 0 45px 0;
+        font-size: 24px;
+        font-weight: bold;
+    }
+    &__pic {
+        height: 180px;
+        width: 180px;
+        margin-bottom: 20px;
+    }
+    &__desc {
+        color: #E5E5E5;
+    }
+}
