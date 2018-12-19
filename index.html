@@ -1,0 +1,1217 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="UTF-8"/>
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <meta http-equiv="X-UA-Compatible" content="ie=edge">
+        <link href="./styles/normalize/normalize.css" rel="stylesheet" type="text/css"/>
+        <link href="./styles/main.css" rel="stylesheet" type="text/css"/>
+    </head>
+    <body>
+        <div class="wrapper">
+            <div class="bg"></div>
+            <header class="header">
+                <a href="#" class="nav__burger-link">
+                    <div  class="nav__burger"></div>
+                </a>
+                <div class="header__nav">
+                    <nav class="nav">
+                        <ul class="nav__list">
+                            <li class="nav__item">
+                                <a href="#" class="nav__item-link">Ресторан</a>
+                            </li>
+                            <li class="nav__item">
+                                <a href="#" class="nav__item-link">Доставка</a>
+                            </li>
+                            <li class="nav__item">
+                                <a href="#" class="nav__item-link">Караоке</a>
+                            </li>
+                        </ul>
+                        <div class="logo"></div>
+                        <ul class="nav__list">
+                            <li class="nav__item">
+                                <a href="#" class="nav__item-link">О нас</a>
+                            </li>
+                            <li class="nav__item">
+                                <a href="#" class="nav__item-link">Новости</a>
+                            </li>
+                            <li class="nav__item">
+                                <a href="#" class="nav__item-link">Контакты</a>
+                            </li>
+                        </ul>
+                    </nav>
+                </div>
+                <div class="header__account">
+                    <div class="account">
+                        <svg class="account__icon">
+                            <use xlink:href="./images/icons/sprite.svg#icon"></use>
+                        </svg>
+                        <div class="account__name">Константин</div>
+                    </div>
+                </div>
+            </header>
+            <main class="main">
+                <div class="main__content">
+                    <div class="content">
+                        <div class="content__banner">
+                            <div class="banner">
+                                <div class="banner__content">
+                                    <div class="banner__info">
+                                        <h1 class="banner__title">Ресторан
+                                            <svg class="banner__icon">
+                                                <use xlink:href="./images/icons/sprite.svg#arrow"></use>
+                                            </svg>
+                                        </h1>
+                                        <lu class="banner__info-list">
+                                            <li class="banner__info-item">
+                                                <h3 class="banner__info-title">Кухня</h3>
+                                                <div class="banner__info-desc">Восточная</div>
+                                            </li>
+                                            <li class="banner__info-item">
+                                                <h3 class="banner__info-title">Заказ</h3>
+                                                <div class="banner__info-desc">От 1000 &#8381</div>
+                                            </li>
+                                            <li class="banner__info-item">
+                                                <h3 class="banner__info-title">Доставка</h3>
+                                                <div class="banner__info-desc">с 11:00 до 02:00</div>
+                                            </li>
+                                        </lu>
+                                    </div>
+                                    <a class="banner__button" href="#">о ресторане</a>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="content__filter">
+                            <div class="filter js-filter">
+                                <ul class="filter__list js-filter__list">
+                                    <li class="filter__item js-filter__item">
+                                        <button class="filter__btn" type="button" data-index-button="1">Популярные<sup class="filter__btn-degree">12</sup></button>
+                                    </li>
+                                    <li class="filter__item js-filter__item">
+                                        <button class="filter__btn" type="button" data-index-button="2">Горячее<sup class="filter__btn-degree">74</sup></button>
+                                    </li>
+                                    <li class="filter__item js-filter__item">
+                                        <button class="filter__btn" type="button" data-index-button="3">Гарниры<sup class="filter__btn-degree">16</sup></button>
+                                    </li>
+                                    <li class="filter__item js-filter__item">
+                                        <button class="filter__btn" type="button" data-index-button="4">Выпечка<sup class="filter__btn-degree">31</sup></button>
+                                    </li>
+                                    <li class="filter__item js-filter__item">
+                                        <button class="filter__btn" type="button" data-index-button="5">Гриль<sup class="filter__btn-degree">8</sup></button>
+                                    </li>
+                                    <li class="filter__item js-filter__item">
+                                        <button class="filter__btn" type="button" data-index-button="6">Детское<sup class="filter__btn-degree">12</sup></button>
+                                    </li>
+                                    <li class="filter__item js-filter__item">
+                                        <button class="filter__btn" type="button" data-index-button="7">Закуски<sup class="filter__btn-degree">21</sup></button>
+                                    </li>
+                                    <li class="filter__item js-filter__item">
+                                        <button class="filter__btn" type="button" data-index-button="8">Супы<sup class="filter__btn-degree">14</sup></button>
+                                    </li>
+                                </ul>
+                            </div>
+                        </div>
+                        <div class="content__section">
+                            <div class="section">
+                                <ul class="section__list js-sections">
+                                    <li class="section__item js-section" data-section="1">
+                                        <h2 class="section__title">Популярный<sup>12</sup></h2>
+                                        <div class="section__filter">По цене
+                                            <svg class="section__icon">
+                                                <use xlink:href="./images/icons/sprite.svg#down"></use>
+                                            </svg>
+                                        </div>
+                                        <div class="section__menu">
+                                            <ul class="menu">
+                                                <li class="menu__item">
+                                                    <div class="menu__count">
+                                                        <button class="menu__minus">-</button>
+                                                        <span class="menu__number">0</span>
+                                                        <button class="menu__plus">+</button>
+                                                    </div>
+                                                    <img src="./images/content/dish-1.png" alt="dish-pic" class="menu__img">
+                                                    <div class="menu__title">
+                                                        <h3 class="menu__name">Плов
+                                                            <span class="menu__weight">250г</span>
+                                                        </h3>
+                                                        <span class="menu__cost">246 &#8381</span>
+                                                    </div>
+                                                    <div class="menu__consist">Камчатский краб, авокадо, свежие овощи и цитрусовый...
+                                                        <button class="menu__consist-more" data-btn="1">подробнее</button>
+                                                    </div>
+                                                </li>
+                                                <li class="menu__item">
+                                                    <div class="menu__count">
+                                                        <button class="menu__minus">-</button>
+                                                        <span class="menu__number">0</span>
+                                                        <button class="menu__plus">+</button>
+                                                    </div>
+                                                    <img src="./images/content/dish-2.png" alt="dish-pic" class="menu__img menu__img_width">
+                                                    <div class="menu__title">
+                                                        <h3 class="menu__name">Шаверма
+                                                            <span class="menu__weight">336г</span>
+                                                        </h3>
+                                                        <div class="menu__cost">246 &#8381</div>
+                                                    </div>
+                                                    <div class="menu__consist">Камчатский краб, авокадо, свежие овощи и цитрусовый...
+                                                        <button class="menu__consist-more" data-btn="2">подробнее</button>
+                                                    </div>
+                                                </li>
+                                                <li class="menu__item">
+                                                    <div class="menu__count">
+                                                        <button class="menu__minus">-</button>
+                                                        <span class="menu__number">0</span>
+                                                        <button class="menu__plus">+</button>
+                                                    </div>
+                                                    <img src="./images/content/dish-3.png" alt="dish-pic" class="menu__img">
+                                                    <div class="menu__title">
+                                                        <h3 class="menu__name">Шашлык
+                                                            <span class="menu__weight">250г</span>
+                                                        </h3>
+                                                        <div class="menu__cost">656 &#8381</div>
+                                                    </div>
+                                                    <div class="menu__consist">Камчатский краб, авокадо, свежие овощи и цитрусовый...
+                                                        <button class="menu__consist-more" data-btn="3">подробнее</button>
+                                                    </div>
+                                                </li>
+                                                <li class="menu__item">
+                                                    <div class="menu__count">
+                                                        <button class="menu__minus">-</button>
+                                                        <span class="menu__number">0</span>
+                                                        <button class="menu__plus">+</button>
+                                                    </div>
+                                                    <img src="./images/content/dish-4.png" alt="dish-pic" class="menu__img">
+                                                    <div class="menu__title">
+                                                        <h3 class="menu__name">Судак
+                                                            <span class="menu__weight">250г</span>
+                                                        </h3>
+                                                        <div class="menu__cost">226 &#8381</div>
+                                                    </div>
+                                                    <div class="menu__consist">Камчатский краб, авокадо, свежие овощи и цитрусовый...
+                                                        <button class="menu__consist-more" data-btn="4">подробнее</button>
+                                                    </div>
+                                                </li>
+                                            </ul>
+                                        </div>
+                                    </li>
+                                    <li class="section__item js-section" data-section="2">
+                                        <h2 class="section__title">Горячее<sup>74</sup></h2>
+                                        <div class="section__filter">По цене
+                                            <svg class="section__icon">
+                                                <use xlink:href="./images/icons/sprite.svg#down"></use>
+                                            </svg>
+                                        </div>
+                                        <div class="section__menu">
+                                            <ul class="menu">
+                                                <li class="menu__item">
+                                                    <div class="menu__count">
+                                                        <button class="menu__minus">-</button>
+                                                        <span class="menu__number">0</span>
+                                                        <button class="menu__plus">+</button>
+                                                    </div>
+                                                    <img src="./images/content/dish-5.png" alt="dish-pic" class="menu__img">
+                                                    <div class="menu__title">
+                                                        <h3 class="menu__name">Манты
+                                                            <span class="menu__weight">250г</span>
+                                                        </h3>
+                                                        <div class="menu__cost">326 &#8381</div>
+                                                    </div>
+                                                    <div class="menu__consist">Камчатский краб, авокадо, свежие овощи и цитрусовый...
+                                                        <button class="menu__consist-more" data-btn="5">подробнее</button>
+                                                    </div>
+                                                </li>
+                                                <li class="menu__item">
+                                                    <div class="menu__count">
+                                                        <button class="menu__minus">-</button>
+                                                        <span class="menu__number">0</span>
+                                                        <button class="menu__plus">+</button>
+                                                    </div>
+                                                    <img src="./images/content/dish-6.png" alt="dish-pic" class="menu__img">
+                                                    <div class="menu__title">
+                                                        <h3 class="menu__name">Шаверма
+                                                            <span class="menu__weight">250г</span>
+                                                        </h3>
+                                                        <div class="menu__cost">146 &#8381</div>
+                                                    </div>
+                                                    <div class="menu__consist">Камчатский краб, авокадо, свежие овощи и цитрусовый...
+                                                        <button class="menu__consist-more" data-btn="6">подробнее</button>
+                                                    </div>
+                                                </li>
+                                                <li class="menu__item">
+                                                    <div class="menu__count">
+                                                        <button class="menu__minus">-</button>
+                                                        <span class="menu__number">0</span>
+                                                        <button class="menu__plus">+</button>
+                                                    </div>
+                                                    <img src="./images/content/dish-7.png" alt="dish-pic" class="menu__img">
+                                                    <div class="menu__title">
+                                                        <h3 class="menu__name">Бешбармак
+                                                            <span class="menu__weight">250г</span>
+                                                        </h3>
+                                                        <div class="menu__cost">446 &#8381</div>
+                                                    </div>
+                                                    <div class="menu__consist">Камчатский краб, авокадо, свежие овощи и цитрусовый...
+                                                        <button class="menu__consist-more" data-btn="7">подробнее</button>
+                                                    </div>
+                                                </li>
+                                                <li class="menu__item">
+                                                    <div class="menu__count">
+                                                        <button class="menu__minus">-</button>
+                                                        <span class="menu__number">0</span>
+                                                        <button class="menu__plus">+</button>
+                                                    </div>
+                                                    <img src="./images/content/dish-8.png" alt="dish-pic" class="menu__img">
+                                                    <div class="menu__title">
+                                                        <h3 class="menu__name">Ковурма
+                                                            <span class="menu__weight">250г</span>
+                                                        </h3>
+                                                        <div class="menu__cost">246 &#8381</div>
+                                                    </div>
+                                                    <div class="menu__consist">Камчатский краб, авокадо, свежие овощи и цитрусовый...
+                                                        <button class="menu__consist-more" data-btn="8">подробнее</button>
+                                                    </div>
+                                                </li>
+                                            </ul>
+                                        </div>
+                                    </li>
+                                    <li class="section__item js-section" data-section="3">
+                                        <h2 class="section__title">Гарниры<sup>16</sup></h2>
+                                        <div class="section__filter">По цене
+                                            <svg class="section__icon">
+                                                <use xlink:href="./images/icons/sprite.svg#down"></use>
+                                            </svg>
+                                        </div>
+                                        <div class="section__menu">
+                                            <ul class="menu">
+                                                <li class="menu__item">
+                                                    <div class="menu__count">
+                                                        <button class="menu__minus">-</button>
+                                                        <span class="menu__number">0</span>
+                                                        <button class="menu__plus">+</button>
+                                                    </div>
+                                                    <img src="./images/content/dish-1.png" alt="dish-pic" class="menu__img">
+                                                    <div class="menu__title">
+                                                        <h3 class="menu__name">Плов
+                                                            <span class="menu__weight">250г</span>
+                                                        </h3>
+                                                        <span class="menu__cost">246 &#8381</span>
+                                                    </div>
+                                                    <div class="menu__consist">Камчатский краб, авокадо, свежие овощи и цитрусовый...
+                                                        <button class="menu__consist-more" data-btn="1">подробнее</button>
+                                                    </div>
+                                                </li>
+                                                <li class="menu__item">
+                                                    <div class="menu__count">
+                                                        <button class="menu__minus">-</button>
+                                                        <span class="menu__number">0</span>
+                                                        <button class="menu__plus">+</button>
+                                                    </div>
+                                                    <img src="./images/content/dish-2.png" alt="dish-pic" class="menu__img menu__img_width">
+                                                    <div class="menu__title">
+                                                        <h3 class="menu__name">Шаверма
+                                                            <span class="menu__weight">336г</span>
+                                                        </h3>
+                                                        <div class="menu__cost">246 &#8381</div>
+                                                    </div>
+                                                    <div class="menu__consist">Камчатский краб, авокадо, свежие овощи и цитрусовый...
+                                                        <button class="menu__consist-more" data-btn="2">подробнее</button>
+                                                    </div>
+                                                </li>
+                                                <li class="menu__item">
+                                                    <div class="menu__count">
+                                                        <button class="menu__minus">-</button>
+                                                        <span class="menu__number">0</span>
+                                                        <button class="menu__plus">+</button>
+                                                    </div>
+                                                    <img src="./images/content/dish-3.png" alt="dish-pic" class="menu__img">
+                                                    <div class="menu__title">
+                                                        <h3 class="menu__name">Шашлык
+                                                            <span class="menu__weight">250г</span>
+                                                        </h3>
+                                                        <div class="menu__cost">656 &#8381</div>
+                                                    </div>
+                                                    <div class="menu__consist">Камчатский краб, авокадо, свежие овощи и цитрусовый...
+                                                        <button class="menu__consist-more" data-btn="3">подробнее</button>
+                                                    </div>
+                                                </li>
+                                                <li class="menu__item">
+                                                    <div class="menu__count">
+                                                        <button class="menu__minus">-</button>
+                                                        <span class="menu__number">0</span>
+                                                        <button class="menu__plus">+</button>
+                                                    </div>
+                                                    <img src="./images/content/dish-4.png" alt="dish-pic" class="menu__img">
+                                                    <div class="menu__title">
+                                                        <h3 class="menu__name">Судак
+                                                            <span class="menu__weight">250г</span>
+                                                        </h3>
+                                                        <div class="menu__cost">226 &#8381</div>
+                                                    </div>
+                                                    <div class="menu__consist">Камчатский краб, авокадо, свежие овощи и цитрусовый...
+                                                        <button class="menu__consist-more" data-btn="4">подробнее</button>
+                                                    </div>
+                                                </li>
+                                            </ul>
+                                        </div>
+                                    </li>
+                                    <li class="section__item js-section" data-section="4">
+                                        <h2 class="section__title">Выпечка<sup>31</sup></h2>
+                                        <div class="section__filter">По цене
+                                            <svg class="section__icon">
+                                                <use xlink:href="./images/icons/sprite.svg#down"></use>
+                                            </svg>
+                                        </div>
+                                        <div class="section__menu">
+                                            <ul class="menu">
+                                                <li class="menu__item">
+                                                    <div class="menu__count">
+                                                        <button class="menu__minus">-</button>
+                                                        <span class="menu__number">0</span>
+                                                        <button class="menu__plus">+</button>
+                                                    </div>
+                                                    <img src="./images/content/dish-5.png" alt="dish-pic" class="menu__img">
+                                                    <div class="menu__title">
+                                                        <h3 class="menu__name">Манты
+                                                            <span class="menu__weight">250г</span>
+                                                        </h3>
+                                                        <div class="menu__cost">326 &#8381</div>
+                                                    </div>
+                                                    <div class="menu__consist">Камчатский краб, авокадо, свежие овощи и цитрусовый...
+                                                        <button class="menu__consist-more" data-btn="5">подробнее</button>
+                                                    </div>
+                                                </li>
+                                                <li class="menu__item">
+                                                    <div class="menu__count">
+                                                        <button class="menu__minus">-</button>
+                                                        <span class="menu__number">0</span>
+                                                        <button class="menu__plus">+</button>
+                                                    </div>
+                                                    <img src="./images/content/dish-6.png" alt="dish-pic" class="menu__img">
+                                                    <div class="menu__title">
+                                                        <h3 class="menu__name">Шаверма
+                                                            <span class="menu__weight">250г</span>
+                                                        </h3>
+                                                        <div class="menu__cost">146 &#8381</div>
+                                                    </div>
+                                                    <div class="menu__consist">Камчатский краб, авокадо, свежие овощи и цитрусовый...
+                                                        <button class="menu__consist-more" data-btn="6">подробнее</button>
+                                                    </div>
+                                                </li>
+                                                <li class="menu__item">
+                                                    <div class="menu__count">
+                                                        <button class="menu__minus">-</button>
+                                                        <span class="menu__number">0</span>
+                                                        <button class="menu__plus">+</button>
+                                                    </div>
+                                                    <img src="./images/content/dish-7.png" alt="dish-pic" class="menu__img">
+                                                    <div class="menu__title">
+                                                        <h3 class="menu__name">Бешбармак
+                                                            <span class="menu__weight">250г</span>
+                                                        </h3>
+                                                        <div class="menu__cost">446 &#8381</div>
+                                                    </div>
+                                                    <div class="menu__consist">Камчатский краб, авокадо, свежие овощи и цитрусовый...
+                                                        <button class="menu__consist-more" data-btn="7">подробнее</button>
+                                                    </div>
+                                                </li>
+                                                <li class="menu__item">
+                                                    <div class="menu__count">
+                                                        <button class="menu__minus">-</button>
+                                                        <span class="menu__number">0</span>
+                                                        <button class="menu__plus">+</button>
+                                                    </div>
+                                                    <img src="./images/content/dish-8.png" alt="dish-pic" class="menu__img">
+                                                    <div class="menu__title">
+                                                        <h3 class="menu__name">Ковурма
+                                                            <span class="menu__weight">250г</span>
+                                                        </h3>
+                                                        <div class="menu__cost">246 &#8381</div>
+                                                    </div>
+                                                    <div class="menu__consist">Камчатский краб, авокадо, свежие овощи и цитрусовый...
+                                                        <button class="menu__consist-more" data-btn="8">подробнее</button>
+                                                    </div>
+                                                </li>
+                                            </ul>
+                                        </div>
+                                    </li>
+                                    <li class="section__item js-section" data-section="5">
+                                        <h2 class="section__title">Гриль<sup>8</sup></h2>
+                                        <div class="section__filter">По цене
+                                            <svg class="section__icon">
+                                                <use xlink:href="./images/icons/sprite.svg#down"></use>
+                                            </svg>
+                                        </div>
+                                        <div class="section__menu">
+                                            <ul class="menu">
+                                                <li class="menu__item">
+                                                    <div class="menu__count">
+                                                        <button class="menu__minus">-</button>
+                                                        <span class="menu__number">0</span>
+                                                        <button class="menu__plus">+</button>
+                                                    </div>
+                                                    <img src="./images/content/dish-1.png" alt="dish-pic" class="menu__img">
+                                                    <div class="menu__title">
+                                                        <h3 class="menu__name">Плов
+                                                            <span class="menu__weight">250г</span>
+                                                        </h3>
+                                                        <span class="menu__cost">246 &#8381</span>
+                                                    </div>
+                                                    <div class="menu__consist">Камчатский краб, авокадо, свежие овощи и цитрусовый...
+                                                        <button class="menu__consist-more" data-btn="1">подробнее</button>
+                                                    </div>
+                                                </li>
+                                                <li class="menu__item">
+                                                    <div class="menu__count">
+                                                        <button class="menu__minus">-</button>
+                                                        <span class="menu__number">0</span>
+                                                        <button class="menu__plus">+</button>
+                                                    </div>
+                                                    <img src="./images/content/dish-2.png" alt="dish-pic" class="menu__img menu__img_width">
+                                                    <div class="menu__title">
+                                                        <h3 class="menu__name">Шаверма
+                                                            <span class="menu__weight">336г</span>
+                                                        </h3>
+                                                        <div class="menu__cost">246 &#8381</div>
+                                                    </div>
+                                                    <div class="menu__consist">Камчатский краб, авокадо, свежие овощи и цитрусовый...
+                                                        <button class="menu__consist-more" data-btn="2">подробнее</button>
+                                                    </div>
+                                                </li>
+                                                <li class="menu__item">
+                                                    <div class="menu__count">
+                                                        <button class="menu__minus">-</button>
+                                                        <span class="menu__number">0</span>
+                                                        <button class="menu__plus">+</button>
+                                                    </div>
+                                                    <img src="./images/content/dish-3.png" alt="dish-pic" class="menu__img">
+                                                    <div class="menu__title">
+                                                        <h3 class="menu__name">Шашлык
+                                                            <span class="menu__weight">250г</span>
+                                                        </h3>
+                                                        <div class="menu__cost">656 &#8381</div>
+                                                    </div>
+                                                    <div class="menu__consist">Камчатский краб, авокадо, свежие овощи и цитрусовый...
+                                                        <button class="menu__consist-more" data-btn="3">подробнее</button>
+                                                    </div>
+                                                </li>
+                                                <li class="menu__item">
+                                                    <div class="menu__count">
+                                                        <button class="menu__minus">-</button>
+                                                        <span class="menu__number">0</span>
+                                                        <button class="menu__plus">+</button>
+                                                    </div>
+                                                    <img src="./images/content/dish-4.png" alt="dish-pic" class="menu__img">
+                                                    <div class="menu__title">
+                                                        <h3 class="menu__name">Судак
+                                                            <span class="menu__weight">250г</span>
+                                                        </h3>
+                                                        <div class="menu__cost">226 &#8381</div>
+                                                    </div>
+                                                    <div class="menu__consist">Камчатский краб, авокадо, свежие овощи и цитрусовый...
+                                                        <button class="menu__consist-more" data-btn="4">подробнее</button>
+                                                    </div>
+                                                </li>
+                                            </ul>
+                                        </div>
+                                    </li>
+                                    <li class="section__item js-section" data-section="6">
+                                        <h2 class="section__title">Детское<sup>12</sup></h2>
+                                        <div class="section__filter">По цене
+                                            <svg class="section__icon">
+                                                <use xlink:href="./images/icons/sprite.svg#down"></use>
+                                            </svg>
+                                        </div>
+                                        <div class="section__menu">
+                                            <ul class="menu">
+                                                <li class="menu__item">
+                                                    <div class="menu__count">
+                                                        <button class="menu__minus">-</button>
+                                                        <span class="menu__number">0</span>
+                                                        <button class="menu__plus">+</button>
+                                                    </div>
+                                                    <img src="./images/content/dish-5.png" alt="dish-pic" class="menu__img">
+                                                    <div class="menu__title">
+                                                        <h3 class="menu__name">Манты
+                                                            <span class="menu__weight">250г</span>
+                                                        </h3>
+                                                        <div class="menu__cost">326 &#8381</div>
+                                                    </div>
+                                                    <div class="menu__consist">Камчатский краб, авокадо, свежие овощи и цитрусовый...
+                                                        <button class="menu__consist-more" data-btn="5">подробнее</button>
+                                                    </div>
+                                                </li>
+                                                <li class="menu__item">
+                                                    <div class="menu__count">
+                                                        <button class="menu__minus">-</button>
+                                                        <span class="menu__number">0</span>
+                                                        <button class="menu__plus">+</button>
+                                                    </div>
+                                                    <img src="./images/content/dish-6.png" alt="dish-pic" class="menu__img">
+                                                    <div class="menu__title">
+                                                        <h3 class="menu__name">Шаверма
+                                                            <span class="menu__weight">250г</span>
+                                                        </h3>
+                                                        <div class="menu__cost">146 &#8381</div>
+                                                    </div>
+                                                    <div class="menu__consist">Камчатский краб, авокадо, свежие овощи и цитрусовый...
+                                                        <button class="menu__consist-more" data-btn="6">подробнее</button>
+                                                    </div>
+                                                </li>
+                                                <li class="menu__item">
+                                                    <div class="menu__count">
+                                                        <button class="menu__minus">-</button>
+                                                        <span class="menu__number">0</span>
+                                                        <button class="menu__plus">+</button>
+                                                    </div>
+                                                    <img src="./images/content/dish-7.png" alt="dish-pic" class="menu__img">
+                                                    <div class="menu__title">
+                                                        <h3 class="menu__name">Бешбармак
+                                                            <span class="menu__weight">250г</span>
+                                                        </h3>
+                                                        <div class="menu__cost">446 &#8381</div>
+                                                    </div>
+                                                    <div class="menu__consist">Камчатский краб, авокадо, свежие овощи и цитрусовый...
+                                                        <button class="menu__consist-more" data-btn="7">подробнее</button>
+                                                    </div>
+                                                </li>
+                                                <li class="menu__item">
+                                                    <div class="menu__count">
+                                                        <button class="menu__minus">-</button>
+                                                        <span class="menu__number">0</span>
+                                                        <button class="menu__plus">+</button>
+                                                    </div>
+                                                    <img src="./images/content/dish-8.png" alt="dish-pic" class="menu__img">
+                                                    <div class="menu__title">
+                                                        <h3 class="menu__name">Ковурма
+                                                            <span class="menu__weight">250г</span>
+                                                        </h3>
+                                                        <div class="menu__cost">246 &#8381</div>
+                                                    </div>
+                                                    <div class="menu__consist">Камчатский краб, авокадо, свежие овощи и цитрусовый...
+                                                        <button class="menu__consist-more" data-btn="8">подробнее</button>
+                                                    </div>
+                                                </li>
+                                            </ul>
+                                        </div>
+                                    </li>
+                                    <li class="section__item js-section" data-section="7">
+                                        <h2 class="section__title">Закуски<sup>21</sup></h2>
+                                        <div class="section__filter">По цене
+                                            <svg class="section__icon">
+                                                <use xlink:href="./images/icons/sprite.svg#down"></use>
+                                            </svg>
+                                        </div>
+                                        <div class="section__menu">
+                                            <ul class="menu">
+                                                <li class="menu__item">
+                                                    <div class="menu__count">
+                                                        <button class="menu__minus">-</button>
+                                                        <span class="menu__number">0</span>
+                                                        <button class="menu__plus">+</button>
+                                                    </div>
+                                                    <img src="./images/content/dish-1.png" alt="dish-pic" class="menu__img">
+                                                    <div class="menu__title">
+                                                        <h3 class="menu__name">Плов
+                                                            <span class="menu__weight">250г</span>
+                                                        </h3>
+                                                        <span class="menu__cost">246 &#8381</span>
+                                                    </div>
+                                                    <div class="menu__consist">Камчатский краб, авокадо, свежие овощи и цитрусовый...
+                                                        <button class="menu__consist-more" data-btn="1">подробнее</button>
+                                                    </div>
+                                                </li>
+                                                <li class="menu__item">
+                                                    <div class="menu__count">
+                                                        <button class="menu__minus">-</button>
+                                                        <span class="menu__number">0</span>
+                                                        <button class="menu__plus">+</button>
+                                                    </div>
+                                                    <img src="./images/content/dish-2.png" alt="dish-pic" class="menu__img menu__img_width">
+                                                    <div class="menu__title">
+                                                        <h3 class="menu__name">Шаверма
+                                                            <span class="menu__weight">336г</span>
+                                                        </h3>
+                                                        <div class="menu__cost">246 &#8381</div>
+                                                    </div>
+                                                    <div class="menu__consist">Камчатский краб, авокадо, свежие овощи и цитрусовый...
+                                                        <button class="menu__consist-more" data-btn="2">подробнее</button>
+                                                    </div>
+                                                </li>
+                                                <li class="menu__item">
+                                                    <div class="menu__count">
+                                                        <button class="menu__minus">-</button>
+                                                        <span class="menu__number">0</span>
+                                                        <button class="menu__plus">+</button>
+                                                    </div>
+                                                    <img src="./images/content/dish-3.png" alt="dish-pic" class="menu__img">
+                                                    <div class="menu__title">
+                                                        <h3 class="menu__name">Шашлык
+                                                            <span class="menu__weight">250г</span>
+                                                        </h3>
+                                                        <div class="menu__cost">656 &#8381</div>
+                                                    </div>
+                                                    <div class="menu__consist">Камчатский краб, авокадо, свежие овощи и цитрусовый...
+                                                        <button class="menu__consist-more" data-btn="3">подробнее</button>
+                                                    </div>
+                                                </li>
+                                                <li class="menu__item">
+                                                    <div class="menu__count">
+                                                        <button class="menu__minus">-</button>
+                                                        <span class="menu__number">0</span>
+                                                        <button class="menu__plus">+</button>
+                                                    </div>
+                                                    <img src="./images/content/dish-4.png" alt="dish-pic" class="menu__img">
+                                                    <div class="menu__title">
+                                                        <h3 class="menu__name">Судак
+                                                            <span class="menu__weight">250г</span>
+                                                        </h3>
+                                                        <div class="menu__cost">226 &#8381</div>
+                                                    </div>
+                                                    <div class="menu__consist">Камчатский краб, авокадо, свежие овощи и цитрусовый...
+                                                        <button class="menu__consist-more" data-btn="4">подробнее</button>
+                                                    </div>
+                                                </li>
+                                            </ul>
+                                        </div>
+                                    </li>
+                                    <li class="section__item js-section" data-section="8">
+                                        <h2 class="section__title">Супы<sup>14</sup></h2>
+                                        <div class="section__filter">По цене
+                                            <svg class="section__icon">
+                                                <use xlink:href="./images/icons/sprite.svg#down"></use>
+                                            </svg>
+                                        </div>
+                                        <div class="section__menu">
+                                            <ul class="menu">
+                                                <li class="menu__item">
+                                                    <div class="menu__count">
+                                                        <button class="menu__minus">-</button>
+                                                        <span class="menu__number">0</span>
+                                                        <button class="menu__plus">+</button>
+                                                    </div>
+                                                    <img src="./images/content/dish-5.png" alt="dish-pic" class="menu__img">
+                                                    <div class="menu__title">
+                                                        <h3 class="menu__name">Манты
+                                                            <span class="menu__weight">250г</span>
+                                                        </h3>
+                                                        <div class="menu__cost">326 &#8381</div>
+                                                    </div>
+                                                    <div class="menu__consist">Камчатский краб, авокадо, свежие овощи и цитрусовый...
+                                                        <button class="menu__consist-more" data-btn="5">подробнее</button>
+                                                    </div>
+                                                </li>
+                                                <li class="menu__item">
+                                                    <div class="menu__count">
+                                                        <button class="menu__minus">-</button>
+                                                        <span class="menu__number">0</span>
+                                                        <button class="menu__plus">+</button>
+                                                    </div>
+                                                    <img src="./images/content/dish-6.png" alt="dish-pic" class="menu__img">
+                                                    <div class="menu__title">
+                                                        <h3 class="menu__name">Шаверма
+                                                            <span class="menu__weight">250г</span>
+                                                        </h3>
+                                                        <div class="menu__cost">146 &#8381</div>
+                                                    </div>
+                                                    <div class="menu__consist">Камчатский краб, авокадо, свежие овощи и цитрусовый...
+                                                        <button class="menu__consist-more" data-btn="6">подробнее</button>
+                                                    </div>
+                                                </li>
+                                                <li class="menu__item">
+                                                    <div class="menu__count">
+                                                        <button class="menu__minus">-</button>
+                                                        <span class="menu__number">0</span>
+                                                        <button class="menu__plus">+</button>
+                                                    </div>
+                                                    <img src="./images/content/dish-7.png" alt="dish-pic" class="menu__img">
+                                                    <div class="menu__title">
+                                                        <h3 class="menu__name">Бешбармак
+                                                            <span class="menu__weight">250г</span>
+                                                        </h3>
+                                                        <div class="menu__cost">446 &#8381</div>
+                                                    </div>
+                                                    <div class="menu__consist">Камчатский краб, авокадо, свежие овощи и цитрусовый...
+                                                        <button class="menu__consist-more" data-btn="7">подробнее</button>
+                                                    </div>
+                                                </li>
+                                                <li class="menu__item">
+                                                    <div class="menu__count">
+                                                        <button class="menu__minus">-</button>
+                                                        <span class="menu__number">0</span>
+                                                        <button class="menu__plus">+</button>
+                                                    </div>
+                                                    <img src="./images/content/dish-8.png" alt="dish-pic" class="menu__img">
+                                                    <div class="menu__title">
+                                                        <h3 class="menu__name">Ковурма
+                                                            <span class="menu__weight">250г</span>
+                                                        </h3>
+                                                        <div class="menu__cost">246 &#8381</div>
+                                                    </div>
+                                                    <div class="menu__consist">Камчатский краб, авокадо, свежие овощи и цитрусовый...
+                                                        <button class="menu__consist-more" data-btn="8">подробнее</button>
+                                                    </div>
+                                                </li>
+                                            </ul>
+                                        </div>
+                                    </li>
+                                </ul>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="main__basket">
+                    <div class="basket">
+                        <h2 class="basket__title">Мой заказ</h2>
+                        <img src="./images/content/basket.png" alt="baslet-empty" class="basket__pic">
+                        <div class="basket__desc">Пока пусто ;)</div>
+                    </div>
+                </div>
+            </main>
+            <ul class="modal">
+                <li class="modal__item" data-modal="1">
+                    <div class="modal__lay">
+                        <button class="info__close info__close_mobile">
+                            <svg class="info__icon">
+                                <use xlink:href="./images/icons/sprite.svg#exit"></use>
+                            </svg>
+                        </button>
+                        <img src="./images/content/dish-1.png" alt="dish-pic" class="modal__lay-img">
+                    </div>
+                    <div class="modal__display">
+                        <div class="modal__display-info">
+                            <div class="info">
+                                <div class="info__close-wrap">
+                                    <button class="info__close">
+                                        <svg class="info__icon">
+                                            <use xlink:href="./images/icons/sprite.svg#exit"></use>
+                                        </svg>
+                                    </button>
+                                </div>
+                                <h2 class="info__title">Плов <span class="info__title-weight">250 г</span></h2>
+                                <h3 class="info__subtitle">Описание</h3>
+                                <div class="info__desc">Плов.Рекомендуемая степень прожарки medium</div>
+                                <h3 class="info__subtitle">Состав</h3>
+                                <div class="info__desc">Микс салатов,лосось,соус терияки,соус Унаги</div>
+                                <h3 class="info__subtitle">Пищевая ценность</h3>
+                                <ul class="info__nutritions">
+                                    <li class="info__nutrition">650
+                                        <div class="info__nutrition-val">ккал</div>
+                                    </li>
+                                    <li class="info__nutrition">34
+                                        <div class="info__nutrition-val">белки</div>
+                                    </li>
+                                    <li class="info__nutrition">60
+                                        <div class="info__nutrition-val">жиры</div>
+                                    </li>
+                                    <li class="info__nutrition">12
+                                        <div class="info__nutrition-val">углеводы</div>
+                                    </li>
+                                </ul>
+                            </div>
+                        </div>
+                        <div class="modal__display-btns">
+                            <div class="btns__switch">
+                                <button class="btns__switch-plus">+</button>
+                                <div class="btns__switch-count">0</div>
+                                <button class="btns__switch-minus">-</button>
+                            </div>
+                            <div class="btns__result">
+                                <div class="btns__result-sum">246 &#8381</div>
+                                <button class="btns__result-add">Добавить</button>
+                                <button class="btns__result-ready">готово</button>
+                            </div>
+                        </div>
+                    </div>
+                </li>
+                <li class="modal__item" data-modal="2">
+                    <div class="modal__lay">
+                        <button class="info__close info__close_mobile">
+                            <svg class="info__icon">
+                                <use xlink:href="./images/icons/sprite.svg#exit"></use>
+                            </svg>
+                        </button>
+                        <img src="./images/content/dish-2.png" alt="dish-pic" class="modal__lay-img">
+                    </div>
+                    <div class="modal__display">
+                        <div class="modal__display-info">
+                            <div class="info">
+                                <div class="info__close-wrap">
+                                    <button class="info__close">
+                                        <svg class="info__icon">
+                                            <use xlink:href="./images/icons/sprite.svg#exit"></use>
+                                        </svg>
+                                    </button>
+                                </div>
+                                <h2 class="info__title">Стейк из говядины <span class="info__title-weight">250 г</span></h2>
+                                <h3 class="info__subtitle">Описание</h3>
+                                <div class="info__desc">Стейк из говядины.Рекомендуемая степень прожарки medium</div>
+                                <h3 class="info__subtitle">Состав</h3>
+                                <div class="info__desc">Микс салатов,лосось,соус терияки,соус Унаги</div>
+                                <h3 class="info__subtitle">Пищевая ценность</h3>
+                                <ul class="info__nutritions">
+                                    <li class="info__nutrition">650
+                                        <div class="info__nutrition-val">ккал</div>
+                                    </li>
+                                    <li class="info__nutrition">34
+                                        <div class="info__nutrition-val">белки</div>
+                                    </li>
+                                    <li class="info__nutrition">60
+                                        <div class="info__nutrition-val">жиры</div>
+                                    </li>
+                                    <li class="info__nutrition">12
+                                        <div class="info__nutrition-val">углеводы</div>
+                                    </li>
+                                </ul>
+                            </div>
+                        </div>
+                        <div class="modal__display-btns">
+                            <div class="btns__switch">
+                                <button class="btns__switch-plus">+</button>
+                                <div class="btns__switch-count">0</div>
+                                <button class="btns__switch-minus">-</button>
+                            </div>
+                            <div class="btns__result">
+                                <div class="btns__result-sum">246 &#8381</div>
+                                <button class="btns__result-add">Добавить</button>
+                                <button class="btns__result-ready">готово</button>
+                            </div>
+                        </div>
+                    </div>
+                </li>
+                <li class="modal__item" data-modal="3">
+                    <div class="modal__lay">
+                        <button class="info__close info__close_mobile">
+                            <svg class="info__icon">
+                                <use xlink:href="./images/icons/sprite.svg#exit"></use>
+                            </svg>
+                        </button>
+                        <img src="./images/content/dish-3.png" alt="dish-pic" class="modal__lay-img">
+                    </div>
+                    <div class="modal__display">
+                        <div class="modal__display-info">
+                            <div class="info">
+                                <div class="info__close-wrap">
+                                    <button class="info__close">
+                                        <svg class="info__icon">
+                                            <use xlink:href="./images/icons/sprite.svg#exit"></use>
+                                        </svg>
+                                    </button>
+                                </div>
+                                <h2 class="info__title">Шашлык <span class="info__title-weight">250 г</span></h2>
+                                <h3 class="info__subtitle">Описание</h3>
+                                <div class="info__desc">Шашлык.Рекомендуемая степень прожарки medium</div>
+                                <h3 class="info__subtitle">Состав</h3>
+                                <div class="info__desc">Микс салатов,лосось,соус терияки,соус Унаги</div>
+                                <h3 class="info__subtitle">Пищевая ценность</h3>
+                                <ul class="info__nutritions">
+                                    <li class="info__nutrition">650
+                                        <div class="info__nutrition-val">ккал</div>
+                                    </li>
+                                    <li class="info__nutrition">34
+                                        <div class="info__nutrition-val">белки</div>
+                                    </li>
+                                    <li class="info__nutrition">60
+                                        <div class="info__nutrition-val">жиры</div>
+                                    </li>
+                                    <li class="info__nutrition">12
+                                        <div class="info__nutrition-val">углеводы</div>
+                                    </li>
+                                </ul>
+                            </div>
+                        </div>
+                        <div class="modal__display-btns">
+                            <div class="btns__switch">
+                                <button class="btns__switch-plus">+</button>
+                                <div class="btns__switch-count">0</div>
+                                <button class="btns__switch-minus">-</button>
+                            </div>
+                            <div class="btns__result">
+                                <div class="btns__result-sum">246 &#8381</div>
+                                <button class="btns__result-add">Добавить</button>
+                                <button class="btns__result-ready">готово</button>
+                            </div>
+                        </div>
+                    </div>
+                </li>
+                <li class="modal__item" data-modal="4">
+                    <div class="modal__lay">
+                        <button class="info__close info__close_mobile">
+                            <svg class="info__icon">
+                                <use xlink:href="./images/icons/sprite.svg#exit"></use>
+                            </svg>
+                        </button>
+                        <img src="./images/content/dish-4.png" alt="dish-pic" class="modal__lay-img">
+                    </div>
+                    <div class="modal__display">
+                        <div class="modal__display-info">
+                            <div class="info">
+                                <div class="info__close-wrap">
+                                    <button class="info__close">
+                                        <svg class="info__icon">
+                                            <use xlink:href="./images/icons/sprite.svg#exit"></use>
+                                        </svg>
+                                    </button>
+                                </div>
+                                <h2 class="info__title">Судак <span class="info__title-weight">250 г</span></h2>
+                                <h3 class="info__subtitle">Описание</h3>
+                                <div class="info__desc">Судак.Рекомендуемая степень прожарки medium</div>
+                                <h3 class="info__subtitle">Состав</h3>
+                                <div class="info__desc">Микс салатов,лосось,соус терияки,соус Унаги</div>
+                                <h3 class="info__subtitle">Пищевая ценность</h3>
+                                <ul class="info__nutritions">
+                                    <li class="info__nutrition">650
+                                        <div class="info__nutrition-val">ккал</div>
+                                    </li>
+                                    <li class="info__nutrition">34
+                                        <div class="info__nutrition-val">белки</div>
+                                    </li>
+                                    <li class="info__nutrition">60
+                                        <div class="info__nutrition-val">жиры</div>
+                                    </li>
+                                    <li class="info__nutrition">12
+                                        <div class="info__nutrition-val">углеводы</div>
+                                    </li>
+                                </ul>
+                            </div>
+                        </div>
+                        <div class="modal__display-btns">
+                            <div class="btns__switch">
+                                <button class="btns__switch-plus">+</button>
+                                <div class="btns__switch-count">0</div>
+                                <button class="btns__switch-minus">-</button>
+                            </div>
+                            <div class="btns__result">
+                                <div class="btns__result-sum">246 &#8381</div>
+                                <button class="btns__result-add">Добавить</button>
+                                <button class="btns__result-ready">готово</button>
+                            </div>
+                        </div>
+                    </div>
+                </li>
+                <li class="modal__item" data-modal="5">
+                    <div class="modal__lay">
+                        <button class="info__close info__close_mobile">
+                            <svg class="info__icon">
+                                <use xlink:href="./images/icons/sprite.svg#exit"></use>
+                            </svg>
+                        </button>
+                        <img src="./images/content/dish-5.png" alt="dish-pic" class="modal__lay-img">
+                    </div>
+                    <div class="modal__display">
+                        <div class="modal__display-info">
+                            <div class="info">
+                                <div class="info__close-wrap">
+                                    <button class="info__close">
+                                        <svg class="info__icon">
+                                            <use xlink:href="./images/icons/sprite.svg#exit"></use>
+                                        </svg>
+                                    </button>
+                                </div>
+                                <h2 class="info__title">Манты <span class="info__title-weight">250 г</span></h2>
+                                <h3 class="info__subtitle">Описание</h3>
+                                <div class="info__desc">Манты.Рекомендуемая степень прожарки medium</div>
+                                <h3 class="info__subtitle">Состав</h3>
+                                <div class="info__desc">Микс салатов,лосось,соус терияки,соус Унаги</div>
+                                <h3 class="info__subtitle">Пищевая ценность</h3>
+                                <ul class="info__nutritions">
+                                    <li class="info__nutrition">650
+                                        <div class="info__nutrition-val">ккал</div>
+                                    </li>
+                                    <li class="info__nutrition">34
+                                        <div class="info__nutrition-val">белки</div>
+                                    </li>
+                                    <li class="info__nutrition">60
+                                        <div class="info__nutrition-val">жиры</div>
+                                    </li>
+                                    <li class="info__nutrition">12
+                                        <div class="info__nutrition-val">углеводы</div>
+                                    </li>
+                                </ul>
+                            </div>
+                        </div>
+                        <div class="modal__display-btns">
+                            <div class="btns__switch">
+                                <button class="btns__switch-plus">+</button>
+                                <div class="btns__switch-count">0</div>
+                                <button class="btns__switch-minus">-</button>
+                            </div>
+                            <div class="btns__result">
+                                <div class="btns__result-sum">246 &#8381</div>
+                                <button class="btns__result-add">Добавить</button>
+                                <button class="btns__result-ready">готово</button>
+                            </div>
+                        </div>
+                    </div>
+                </li>
+                <li class="modal__item" data-modal="6">
+                    <div class="modal__lay">
+                        <button class="info__close info__close_mobile">
+                            <svg class="info__icon">
+                                <use xlink:href="./images/icons/sprite.svg#exit"></use>
+                            </svg>
+                        </button>
+                        <img src="./images/content/dish-6.png" alt="dish-pic" class="modal__lay-img">
+                    </div>
+                    <div class="modal__display">
+                        <div class="modal__display-info">
+                            <div class="info">
+                                <div class="info__close-wrap">
+                                    <button class="info__close">
+                                        <svg class="info__icon">
+                                            <use xlink:href="./images/icons/sprite.svg#exit"></use>
+                                        </svg>
+                                    </button>
+                                </div>
+                                <h2 class="info__title">Шаверма <span class="info__title-weight">250 г</span></h2>
+                                <h3 class="info__subtitle">Описание</h3>
+                                <div class="info__desc">Шаверма.Рекомендуемая степень прожарки medium</div>
+                                <h3 class="info__subtitle">Состав</h3>
+                                <div class="info__desc">Микс салатов,лосось,соус терияки,соус Унаги</div>
+                                <h3 class="info__subtitle">Пищевая ценность</h3>
+                                <ul class="info__nutritions">
+                                    <li class="info__nutrition">650
+                                        <div class="info__nutrition-val">ккал</div>
+                                    </li>
+                                    <li class="info__nutrition">34
+                                        <div class="info__nutrition-val">белки</div>
+                                    </li>
+                                    <li class="info__nutrition">60
+                                        <div class="info__nutrition-val">жиры</div>
+                                    </li>
+                                    <li class="info__nutrition">12
+                                        <div class="info__nutrition-val">углеводы</div>
+                                    </li>
+                                </ul>
+                            </div>
+                        </div>
+                        <div class="modal__display-btns">
+                            <div class="btns__switch">
+                                <button class="btns__switch-plus">+</button>
+                                <div class="btns__switch-count">0</div>
+                                <button class="btns__switch-minus">-</button>
+                            </div>
+                            <div class="btns__result">
+                                <div class="btns__result-sum">246 &#8381</div>
+                                <button class="btns__result-add">Добавить</button>
+                                <button class="btns__result-ready">готово</button>
+                            </div>
+                        </div>
+                    </div>
+                </li>
+                <li class="modal__item" data-modal="7">
+                    <div class="modal__lay">
+                        <button class="info__close info__close_mobile">
+                            <svg class="info__icon">
+                                <use xlink:href="./images/icons/sprite.svg#exit"></use>
+                            </svg>
+                        </button>
+                        <img src="./images/content/dish-7.png" alt="dish-pic" class="modal__lay-img">
+                    </div>
+                    <div class="modal__display">
+                        <div class="modal__display-info">
+                            <div class="info">
+                                <div class="info__close-wrap">
+                                    <button class="info__close">
+                                        <svg class="info__icon">
+                                            <use xlink:href="./images/icons/sprite.svg#exit"></use>
+                                        </svg>
+                                    </button>
+                                </div>
+                                <h2 class="info__title">Бешбармак <span class="info__title-weight">250 г</span></h2>
+                                <h3 class="info__subtitle">Описание</h3>
+                                <div class="info__desc">Бешбармак.Рекомендуемая степень прожарки medium</div>
+                                <h3 class="info__subtitle">Состав</h3>
+                                <div class="info__desc">Микс салатов,лосось,соус терияки,соус Унаги</div>
+                                <h3 class="info__subtitle">Пищевая ценность</h3>
+                                <ul class="info__nutritions">
+                                    <li class="info__nutrition">650
+                                        <div class="info__nutrition-val">ккал</div>
+                                    </li>
+                                    <li class="info__nutrition">34
+                                        <div class="info__nutrition-val">белки</div>
+                                    </li>
+                                    <li class="info__nutrition">60
+                                        <div class="info__nutrition-val">жиры</div>
+                                    </li>
+                                    <li class="info__nutrition">12
+                                        <div class="info__nutrition-val">углеводы</div>
+                                    </li>
+                                </ul>
+                            </div>
+                        </div>
+                        <div class="modal__display-btns">
+                            <div class="btns__switch">
+                                <button class="btns__switch-plus">+</button>
+                                <div class="btns__switch-count">0</div>
+                                <button class="btns__switch-minus">-</button>
+                            </div>
+                            <div class="btns__result">
+                                <div class="btns__result-sum">246 &#8381</div>
+                                <button class="btns__result-add">Добавить</button>
+                                <button class="btns__result-ready">готово</button>
+                            </div>
+                        </div>
+                    </div>
+                </li>
+                <li class="modal__item" data-modal="8">
+                    <div class="modal__lay">
+                        <button class="info__close info__close_mobile">
+                            <svg class="info__icon">
+                                <use xlink:href="./images/icons/sprite.svg#exit"></use>
+                            </svg>
+                        </button>
+                        <img src="./images/content/dish-8.png" alt="dish-pic" class="modal__lay-img">
+                    </div>
+                    <div class="modal__display">
+                        <div class="modal__display-info">
+                            <div class="info">
+                                <div class="info__close-wrap">
+                                    <button class="info__close">
+                                        <svg class="info__icon">
+                                            <use xlink:href="./images/icons/sprite.svg#exit"></use>
+                                        </svg>
+                                    </button>
+                                </div>
+                                <h2 class="info__title">Ковурма <span class="info__title-weight">250 г</span></h2>
+                                <h3 class="info__subtitle">Описание</h3>
+                                <div class="info__desc">Ковурма.Рекомендуемая степень прожарки medium</div>
+                                <h3 class="info__subtitle">Состав</h3>
+                                <div class="info__desc">Микс салатов,лосось,соус терияки,соус Унаги</div>
+                                <h3 class="info__subtitle">Пищевая ценность</h3>
+                                <ul class="info__nutritions">
+                                    <li class="info__nutrition">650
+                                        <div class="info__nutrition-val">ккал</div>
+                                    </li>
+                                    <li class="info__nutrition">34
+                                        <div class="info__nutrition-val">белки</div>
+                                    </li>
+                                    <li class="info__nutrition">60
+                                        <div class="info__nutrition-val">жиры</div>
+                                    </li>
+                                    <li class="info__nutrition">12
+                                        <div class="info__nutrition-val">углеводы</div>
+                                    </li>
+                                </ul>
+                            </div>
+                        </div>
+                        <div class="modal__display-btns">
+                            <div class="btns__switch">
+                                <button class="btns__switch-plus">+</button>
+                                <div class="btns__switch-count">0</div>
+                                <button class="btns__switch-minus">-</button>
+                            </div>
+                            <div class="btns__result">
+                                <div class="btns__result-sum">246 &#8381</div>
+                                <button class="btns__result-add">Добавить</button>
+                                <button class="btns__result-ready">готово</button>
+                            </div>
+                        </div>
+                    </div>
+                </li>
+            </ul>
+            <button class="filter-show"></button>
+        </div>
+        <script type='text/javascript' src="https://ajax.googleapis.com/ajax/libs/jquery/2.1.1/jquery.min.js"></script>
+        <script src="./scripts/main.js"></script>
+    </body>
+</html>
